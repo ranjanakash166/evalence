@@ -19,7 +19,7 @@ export default function ContactUs() {
           />
           <h2 className="text-xl font-semibold mb-1">Shashank</h2>
           <p className="text-blue-600 font-medium mb-1">Co-Founder & CEO</p>
-          <p className="text-gray-500 mb-2">shashank@evalence.io</p>
+          <p className="text-gray-500 mb-2">support@evalence.io</p>
           <p className="text-center text-gray-600 text-sm">
             Shashank is passionate about building AI-driven solutions that empower teams to do their best work. Reach out to him for partnership and business inquiries.
           </p>
@@ -35,7 +35,7 @@ export default function ContactUs() {
           />
           <h2 className="text-xl font-semibold mb-1">Gaurav Suman</h2>
           <p className="text-blue-600 font-medium mb-1">Co-Founder & CTO</p>
-          <p className="text-gray-500 mb-2">gaurav@evalence.io</p>
+          <p className="text-gray-500 mb-2">support@evalence.io</p>
           <p className="text-center text-gray-600 text-sm">
             Gaurav leads our technology and product development. Contact him for technical questions, integrations, or support.
           </p>
