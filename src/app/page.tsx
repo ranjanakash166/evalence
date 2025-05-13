@@ -30,7 +30,7 @@ export default function Home() {
               Request Demo
             </a>
             <a 
-              href="#contact-sales" 
+              href="/contact-us" 
               className="btn-primary bg-transparent border-2 border-white px-6 py-3 rounded-full font-semibold"
             >
               Contact Sales
