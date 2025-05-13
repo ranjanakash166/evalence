@@ -27,7 +27,7 @@ export default function HeroSection({ id }: { id?: string }) {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <a 
-              href="#request-demo" 
+              href="/contact-us" 
               className="btn-primary flex items-center justify-center bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors"
             >
               Request a Demo

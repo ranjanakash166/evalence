@@ -24,7 +24,7 @@ export default function Home() {
           </p>
           <div className="flex justify-center space-x-4">
             <a 
-              href="#request-demo" 
+              href="/contact-us" 
               className="btn-primary bg-white text-blue-600 px-6 py-3 rounded-full font-semibold"
             >
               Request Demo

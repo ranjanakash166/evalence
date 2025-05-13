@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
+import Image from 'next/image'
 
 const navItems = [
   { href: '#features', label: 'Features' },
@@ -21,8 +22,12 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white shadow-sm">
       <div className="section-container header-container flex justify-between items-center py-2 md:py-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center">
-          <span className="text-2xl font-bold text-blue-600">Evalence</span>
+        <Link href="/" className="flex items-center space-x-3 group">
+          <Image src="/images/logo.jpeg" alt="Evalence Logo" width={48} height={48} className="w-12 h-12" />
+          <div className="flex flex-col leading-tight">
+            <span className="text-2xl font-bold text-blue-600">Evalence</span>
+            <span className="text-xs text-gray-500 group-hover:text-blue-600 transition-colors">Where Work Meets Insight</span>
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
@@ -44,7 +49,7 @@ export default function Header() {
               Login
             </Link>
             <Link 
-              href="#request-demo" 
+              href="/contact-us" 
               className="flex items-center h-10 btn-primary bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors"
             >
               Request Demo
@@ -94,7 +99,7 @@ export default function Header() {
                     Login
                   </Link>
                   <Link 
-                    href="#request-demo" 
+                    href="/contact-us" 
                     className="block btn-primary bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors text-center"
                     onClick={toggleMenu}
                   >
