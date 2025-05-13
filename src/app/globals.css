@@ -1,26 +1,52 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  @apply w-2 bg-gray-100;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-500 rounded-full;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Smooth scroll and focus states */
+html {
+  scroll-behavior: smooth;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Custom focus styles */
+*:focus-visible {
+  @apply outline-2 outline-blue-500 ring-2 ring-blue-300 rounded;
+}
+
+/* Gradient background utility */
+.bg-gradient {
+  background: linear-gradient(135deg, #6366f1, #3b82f6);
+}
+
+/* Animated button hover effects */
+.btn-primary {
+  @apply transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Section styling */
+.section-container {
+  @apply px-4 md:px-8 lg:px-16 py-12 md:py-16 lg:py-20 max-w-7xl mx-auto;
+}
+
+.header-container {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
 }
